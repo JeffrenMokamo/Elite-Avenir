@@ -120,7 +120,10 @@ sup{
             padding: 0!important;
         }
         footer .row .liens a:nth-child(1){
-            margin-left: 0!important;
+            margin-left: 10px!important;
+        }
+        footer{
+            padding: 30px 50px 20px 50px!important;
         }
         .liens{
             display: flex;
@@ -146,11 +149,10 @@ sup{
             width: 100%!important;
         }
         .elit-avenir-acc .text-acc-elit-avenir{
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px!important;
+            padding: 60px 20px!important;
             color: #fff;  
             width: 100%!important;
-            height: 60%!important;
+            height: 40%!important;
         }
         .elit-avenir-acc .text-acc-elit-avenir h1{
             font-size: 170%!important;
@@ -161,9 +163,6 @@ sup{
             font-size: 200%!important;
             margin-bottom: 20px;
             font-weight: bold;
-        }
-        .elit-avenir-acc .text-acc-elit-avenir p{
-            font-size: 120%!important;
         }
         .elit-avenir-acc .forms{
             padding: 10px!important;
@@ -193,7 +192,7 @@ sup{
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
 
 
@@ -211,6 +210,8 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     width: 60%;
     height: 100%;
+    padding-left: 10px;
+    padding-top: 150px;
 }
 
 .elit-avenir-acc .forms{
@@ -303,7 +304,6 @@ body{
 
 footer{
     padding: 60px 100px 20px 100px;
-    background-repeat: no-repeat;
     width: 100%!important;
     bottom: 0;
     background-color: #283277;
@@ -342,8 +342,6 @@ footer .row .liens a:nth-child(1){
 .acc-about-elit{
     margin-top: 100px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     height: 50vh;
 }

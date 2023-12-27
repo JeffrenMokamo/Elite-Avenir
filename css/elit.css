@@ -29,8 +29,6 @@ sup{
         justify-content: space-between;
         border-bottom: 1px solid rgba(217, 217, 217, .7);
         z-index: 1000!important;
-        width: 100%;
-        overflow-x: hidden!important;
     }
 
     .nav-bar button{
@@ -85,7 +83,6 @@ sup{
 
         .nav-bar{
             padding: 0 20px;
-            width: 100%!important;
         }
         .nav-bar button{
             position: absolute;

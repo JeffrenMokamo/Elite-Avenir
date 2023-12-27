@@ -86,7 +86,13 @@ sup{
         }
         .nav-bar button{
             position: absolute;
-            right: 100px;
+            right: 50px;
+            background-color: dodgerblue;
+            color: #fff;
+            width: 120px;
+            font-size: 15px;
+            border-radius: 50px;
+            height: 30px;
         }
         .nav-bar label{
             display: initial;
@@ -137,6 +143,7 @@ sup{
         }
         .elit-avenir-acc{
             flex-direction: column;
+            width: 100%!important;
         }
         .elit-avenir-acc .text-acc-elit-avenir{
             background-color: rgba(0, 0, 0, 0.5);

@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200 & display=swap');
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+sup{
+    color: red;
+}
+
+/* Menu ***************************************************************** */
+
+    .nav-bar input{
+        display: none;
+    }
+
+    .nav-bar label{
+        position: absolute;
+        font-size: 25px;
+        padding: 5px;
+        font-weight: bold;
+        right: 20px;
+        display: none;
+    }
+
+    .nav-bar{
+        height: 100px;
+        padding: 0 100px;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(217, 217, 217, .7);
+        z-index: 1000!important;
+    }
+
+    .nav-bar button{
+        background-color: dodgerblue;
+        color: #fff;
+        width: 150px;
+        border-radius: 50px;
+        height: 40px;
+        border: none;
+    }
+
+    .nav-bar nav{
+        transition: .2s ease-in-out;
+        transform: translateX(0);
+        background-color: #fff;
+    }
+
+    .nav-bar nav ul li{
+        display: inline-flex;
+        position: relative;
+    }
+    .nav-bar nav ul li a{
+        padding: 5px 15px;
+        font-weight: 600;
+        color: #283277;
+        transition: .4s ease-in-out;
+    }
+    .nav-bar nav ul li a.active-l, .nav-bar nav ul li a:hover{
+        color: dodgerblue;
+    }
+
+    .nav-bar nav ul li ul{
+        background-color: #fff;
+        border-radius: 10px;
+        top: 67px;
+        padding: 15px;
+        border: 2px solid rgba(217, 217, 217, .4);
+        transition: .5s ease-in-out;
+        display: none;
+    }
+    .nav-bar nav ul li ul li{
+       margin-bottom: 5px;
+    }
+    .nav-bar nav ul li ul li a{
+        color: black;
+    }
+    .nav-bar ul li:focus-within > ul{
+        display: initial;
+    }
+
+    @media(max-width:1000px) {
+
+        .nav-bar{
+            padding: 0 20px;
+        }
+        .nav-bar button{
+            position: absolute;
+            right: 100px;
+        }
+        .nav-bar label{
+            display: initial;
+        }
+
+        nav{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            border-top: 1Px solid rgba(217, 217, 217, .3);
+            transform: translateX(-100%)!important;
+            border-bottom: 1px solid rgba(217, 217, 217, .3);
+        }
+        nav ul li{
+            width: 100%;
+            padding: 10px;
+        }
+        nav ul li ul{
+            position: relative;
+            width: 100%;
+            left: 0;
+            border-radius: 0!important;
+            top: 100%!important;
+            padding: 0!important;
+        }
+        footer .row .liens a:nth-child(1){
+            margin-left: 0!important;
+        }
+        .liens{
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li ul li{
+            background-color: rgba(217, 217, 217, .3);
+            margin-bottom: 0px!important;
+        }
+        .nav-bar input:checked ~ nav{
+            transform: translateX(0)!important;
+        }
+        footer .row .logo img{
+            width: 80px!important;
+            height: 80px!important;
+            margin-bottom: 30px;
+        }
+        .links{
+            flex-direction: column-reverse!important;
+        }
+        .elit-avenir-acc{
+            flex-direction: column;
+        }
+        .elit-avenir-acc .text-acc-elit-avenir{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px!important;
+            color: #fff;  
+            width: 100%!important;
+            height: 60%!important;
+        }
+        .elit-avenir-acc .text-acc-elit-avenir h1{
+            font-size: 170%!important;
+            margin-bottom: 25px;
+        }
+        
+        .elit-avenir-acc .text-acc-elit-avenir h2{
+            font-size: 200%!important;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .elit-avenir-acc .text-acc-elit-avenir p{
+            font-size: 120%!important;
+        }
+        .elit-avenir-acc .forms{
+            padding: 10px!important;
+        }
+        
+        .elit-avenir-acc .forms div{
+            padding: 20px;
+        }  
+        
+        .elit-avenir-acc .forms div p{
+            color: #283277;
+            font-weight: 600;
+        }   
+        .elit-avenir-acc{
+            height: 95vh!important;
+        }
+
+    }
+
+    footer .row .logo img{
+        width: 100px;
+        height: 100px;
+    }
+
+/***************  Fin Menu *******************/
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.elit-avenir-acc{
+    margin-top: 100px!important;
+    height: 80vh;
+    background-attachment: fixed;
+    width: 100%!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.elit-avenir-acc .text-acc-elit-avenir{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+}
+
+.elit-avenir-acc .forms{
+    padding: 100px 100px;
+}
+
+.elit-avenir-acc .forms div{
+    padding: 20px;
+}  
+
+.elit-avenir-acc .forms div p{
+    color: #283277;
+    font-weight: 600;
+}   
+
+.about-elit{
+    padding: 30px;
+    margin-bottom: 70px;
+}
+.about-elit div h1{
+    color: #283277;
+    font-size: 35px;
+    font-weight: 600!important;
+}
+
+.about-elit div p{
+    margin-bottom: 50px;
+}
+
+.about-elit .row .txt-about-elit h1{
+    margin-bottom: 30px;
+}
+.nos-formations{
+    margin-bottom: 60px;
+}
+.nos-formations .titre h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #283277;
+}
+
+.nos-formations div p{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.nos-formations div button{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.nos-formations .row div .relative{
+    height: 300px!important;
+}
+.nos-formations .row div .relative h1{
+    color: #fff!important;
+}
+.comment{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.nos-parts{
+    margin-bottom: 70px!important;
+}
+
+.nos-parts .txt-part{
+    font-size: 30px;
+}
+
+.txt-msg{
+    margin-bottom: 5px;
+}
+
+.remises-brevets{
+   margin-bottom: 100px!important; 
+}
+.remises-brevets h1{
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.remises-brevets .row div img{
+    margin-bottom: 20px;
+}
+
+
+/* Footer ***************************************************** */
+
+footer{
+    padding: 60px 100px 20px 100px;
+    background-repeat: no-repeat;
+    width: 100%!important;
+    bottom: 0;
+    background-color: #283277;
+}
+
+footer .row:nth-child(1){
+    margin-bottom: 10px;
+}
+
+footer .icons i{
+    color: #283277;
+    background-color: #fff;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+footer .row p{
+    color: #fff;
+    font-weight: 600;
+}
+footer .row .liens a{
+    /* color: rgba(217, 217, 217); */
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+footer .row .liens a:nth-child(1){
+    margin-left: 70px;
+}
+
+/* Apropos  **************************************************** */
+
+.acc-about-elit{
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+.txt-about{
+    margin-top: -70px;
+    z-index: 10!important;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.acc-about-elit h1{
+    font-size: 50px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    margin-top: -50px;
+}
+
+.txt-about h1{
+    color: #283277;
+    font-size: 35px;;
+}
+
+.txt-about p{
+    font-size: 20px;
+}
+
+/* Connection************************************************* */
+
+#img-ins{
+    width: 100px;
+    height: 100px;
+}
+
+#password{
+    margin-bottom: 15px;
+}
+
+/***************** Dashbord *************************/
+
+.table-english, .table-info, .table-auto{
+    margin-bottom: 50px;
+}
+
+/********************     DASHBORD    ***********************/
+
+.menu{
+    margin-top: 50px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.menu ul li{
+    margin: 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .2s ease-in-out;
+}
+.menu ul li.active-link-form, .menu ul li:hover{
+    color: skyblue;
+}
+
+/****       contact      *******/
+
+.acc-cont{
+    height: 250px;
+    margin-top: 100px;
+}
+
+/************        Formation Anglais       ********************/
+
+.english-form{
+    margin-top: 100px;
+}
+
+.english-form h2{
+    font-size: 35px;
+}
+.tabpers{
+    display: block;
+    display: none;
+}
+
+.activeTab{
+    display: block!important;
+}

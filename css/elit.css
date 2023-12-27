@@ -29,6 +29,8 @@ sup{
         justify-content: space-between;
         border-bottom: 1px solid rgba(217, 217, 217, .7);
         z-index: 1000!important;
+        width: 100%;
+        overflow-x: hidden!important;
     }
 
     .nav-bar button{
@@ -83,6 +85,7 @@ sup{
 
         .nav-bar{
             padding: 0 20px;
+            width: 100%!important;
         }
         .nav-bar button{
             position: absolute;
@@ -149,10 +152,10 @@ sup{
             width: 100%!important;
         }
         .elit-avenir-acc .text-acc-elit-avenir{
-            padding: 60px 20px!important;
+            padding: 50px 20px!important;
             color: #fff;  
             width: 100%!important;
-            height: 40%!important;
+            height: 45%!important;
         }
         .elit-avenir-acc .text-acc-elit-avenir h1{
             font-size: 170%!important;
@@ -200,7 +203,6 @@ body{
     margin-top: 100px!important;
     height: 80vh;
     background-attachment: fixed;
-    width: 100%!important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

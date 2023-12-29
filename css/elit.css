@@ -16,10 +16,11 @@ sup{
 
     .nav-bar label{
         position: absolute;
-        font-size: 25px;
+        font-size: 32px;
+        cursor: pointer;
         padding: 5px;
         font-weight: bold;
-        right: 20px;
+        right: 10px;
         display: none;
     }
 
@@ -41,7 +42,7 @@ sup{
     }
 
     .nav-bar nav{
-        transition: .2s ease-in-out;
+        transition: .4s ease-in-out;
         transform: translateX(0);
         background-color: #fff;
     }
@@ -82,7 +83,7 @@ sup{
     @media(max-width:1000px) {
 
         .nav-bar{
-            padding: 0 20px;
+            padding: 0 10px;
         }
         .nav-bar button{
             position: absolute;
@@ -104,7 +105,7 @@ sup{
             left: 0;
             right: 0;
             border-top: 1Px solid rgba(217, 217, 217, .3);
-            transform: translateX(-100%)!important;
+            transform: translateX(100%)!important;
             border-bottom: 1px solid rgba(217, 217, 217, .3);
         }
         nav ul li{

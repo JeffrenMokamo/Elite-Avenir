@@ -3,6 +3,29 @@ const links = document.querySelectorAll('.links-nav-ba');
 const contents = document.querySelectorAll('.tabpers');
 let index = 0, indexC = 0;
 
+let imgDiapos = document.querySelectorAll('.img_diapo');
+var ctr = 0;
+
+function enleveImage(){
+
+    for(let i = 0; i < imgDiapos.length; i++){
+        imgDiapos[i].classList.remove('imgDiapo');
+    }
+
+}
+
+setInterval(() =>{
+
+    ctr++;
+
+    if(ctr >= imgDiapos.length){
+        ctr = 0;
+    }
+    imgDiapos[ctr].classList.add('imgDiapo');
+    enleveImage();
+
+}, 2000);
+
 
 links.forEach(link => {
 

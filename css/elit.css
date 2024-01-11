@@ -8,8 +8,33 @@ sup{
     color: red;
 }
 
+.splide .splide__track .splide__list .splide__slide{
+    height: 80vh;
+}
+
+.splide .splide__track .splide__list .splide__slide img{
+    object-fit: cover!important;
+    width: 100%!important;
+}
+
 .sous-menu{
     display: initial!important;
+}
+
+.diapo{
+    height: 80vh!important;
+}
+
+.diapo .img_diapo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+    opacity: 0;
+}
+
+.imgDiapo{
+    opacity: 1!important;
 }
 
 /* Menu ***************************************************************** */

@@ -10,9 +10,24 @@
     <link rel="stylesheet" href="css/elit.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
+
+  <div class="absolute w-full">
+        
+    <section class="splide" aria-label="Exemple HTML de base de Splide">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="images/entre.jpg" alt="" class="w-100 img_diapo"></li>
+                  <li class="splide__slide"><img src="images/imgD1.jpg" alt="" class="w-100 img_diapo"></li>
+                  <li class="splide__slide"><img src="images/imgD3.jpg" alt="" class="w-100 img_diapo"></li>
+              </ul>
+        </div>
+      </section>
+
+  </div>
 
   <div class="fixed top-0 bg-white nav-bar flex w-full items-center">
     <label for="menu-bottom"><i class="bi bi-list"></i></label>
@@ -54,7 +69,7 @@
 </div>
 
 
-        <div style="background-image: url('images/etudiant-africain-2.webp');" class="elit-avenir-acc d-flex position-relative w-100 mb-5">
+        <div class="elit-avenir-acc d-flex position-relative w-100 mb-5">
             <div class="text-acc-elit-avenir col-md-7 d-flex">
               <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h1 class="text-5xl text-white font-semibold mb-5">Bienvenue !</h1>
@@ -202,5 +217,20 @@
     </script>
 
     <script src="javascript/elit-avenir.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      var splide = new Splide( '.splide', {
+           type: 'loop',
+           perPage: 1,
+           interval: 2000,
+           arrows: false,
+           width: '100%',
+           autoplay: 'true',
+
+           } );
+
+           splide.mount();
+     </script>
+
 </body>
 </html>

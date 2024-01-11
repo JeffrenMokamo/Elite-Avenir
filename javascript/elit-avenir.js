@@ -60,7 +60,3 @@ function affiche(){
 
     sousMenu.classList.add('sous-menu');
 }
-
-function desaffiche(){
-    sousMenu.classList.remove('sous-menu');
-}

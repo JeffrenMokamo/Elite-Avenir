@@ -54,9 +54,13 @@ formsLinks.forEach(formlink => {
 
 })
 
-const sous = document.querySelector('.sous-menu');
+const sousMenu = document.querySelector('nav ul li ul');
 
 function affiche(){
-    
-    sous.classList.toggle('.sous');
+
+    sousMenu.classList.add('sous-menu');
+}
+
+function desaffiche(){
+    sousMenu.classList.remove('sous-menu');
 }

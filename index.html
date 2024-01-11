@@ -28,8 +28,8 @@
         <ul class="relative">
             <li><a href="index.html" class="links-nav-ba active-l">Accueil</a></li>
             <li><a href="about.html" class="links-nav-ba">Apropos</a></li>
-            <li><a href="javascript:void(0)">Nos formations +</a>
-                <ul class="absolute">
+            <li><a href="javascript:void(0)" onfocus="affiche()">Nos formations +</a>
+                <ul class="absolute" id="sous-menu">
                     <li class="flex items-center">
                         <i class="bi bi-person-raised-hand"></i>
                         <a desabled href="form-anglais.html" class="links-nav-ba">Anglais</a>
@@ -54,7 +54,7 @@
 </div>
 
 
-        <div style="background-image: url('images/etudiant-africain-2.webp');" class="elit-avenir-acc d-flex position-relative w-100">
+        <div style="background-image: url('images/etudiant-africain-2.webp');" class="elit-avenir-acc d-flex position-relative w-100 mb-5">
             <div class="text-acc-elit-avenir col-md-7 d-flex">
               <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h1 class="text-5xl text-white font-semibold mb-5">Bienvenue !</h1>
@@ -68,24 +68,6 @@
                 <p class="text-1xl">Élite avenir est une société basée à Kinshasa, spécialisé dans plusieurs domaines d’activités. Notamment les formations professionnel, le Marketing et divers activités.</p>
               </div>
             </div>
-        </div>
-
-        <div class="about-elit w-100">
-          <div class="text-center w-100">
-            <h1>Notre histoire</h1>
-            <p class="w-100 col-md-2 text-center">fondé en 2022 par le visionnaire Butsila Mbungu Obed, Elite Avenir est un centre de formation qui a connu une croissance rapide entre 2022 et 2023. En deux ans le centre de formation a formé différents candidats dans plusieurs domaine notamment, en anglais , informatique, gestion de projet , entrepreneuriat ,projet d’immigration et entrepreneuriat. Depuis lors elite avenir ne cesse de prouver son efficacité au peuple congolais.</p>
-          </div>
-
-          <div class="row">
-            <div class="img-about-elit h-100 col-md-6">
-              <img class="rounded col-md-12" src="images/blababla.avif" alt="">
-            </div>
-            <div class="txt-about-elit col-md-6 d-flex flex-col">
-              <h1>A propos</h1>
-              <p class="col-md-10">Élite Avenir est une structure à finalité sociale vue l’apport qu’elle veut à cette dernière. Apprendre la connaissance et le savoir à la population ou aux membres de la société est ce dans quoi veut œuvrer Élite Avenir. Ce souci est justifié du fait que dans la société, congolaise en particulier, tout le monde n’a pas les moyens ou les possibilités de s’offrir les études supérieures ou universitaires. Grâce à des formations d’ordre professionnel, Élite Avenir permet aux démunis et à toutes les catégories ou souches sociales d’acquérir des connaissances qui les rendront éligibles au marché du travail partout dans le monde.</p>
-              <button class="btn btn-primary col-md-4">En savoir plus</button>
-            </div>
-          </div>
         </div>
 
         <div style="overflow-x: hidden;" class="nos-formations col-md-12 container">
@@ -165,28 +147,42 @@
           </div>
         </div>
 
-        <footer class="col-md-12">
-          <div class="row d-flex align-items-center">
-            <div class="logo col-md-9">
-              <img src="images/logo-elit.png" alt="" class="">
+        <footer class="md:flex items-center justify-around p-2">
+          <div class="text-center histoire mb-5 col-md-3 text-center flex flex-col items-center">
+            <img src="images/logo-elit.png" alt="" class="mb-3">
+            <h1 class="text-2xl font-bold text-white mb-3">Notre histoire</h1>
+            <p class="font-semibold text-white ">fondé en 2022 par le visionnaire Butsila Mbungu Obed, Elite Avenir est un centre de formation qui a connu une croissance rapide entre 2022 et 2023. En deux ans le centre de formation a formé différents candidats dans plusieurs domaine notamment, en anglais , informatique, gestion de projet , entrepreneuriat ,projet d’immigration et entrepreneuriat. Depuis lors elite avenir ne cesse de prouver son efficacité au peuple congolais.</p>
+          </div>
+
+          <div class="links mb-5">
+            <div class="adresse">
+                <h4 class="font-bold text-2xl mb-4 text-white">Nos Adresses</h4>
+
+                <p class="mb-3 font-semibold text-white"><span class="font-bold"><i class="bi bi-geo-alt-fill "></i></span> Nouvelle galerie présidentielle, <strong>Niveau 21, appartement 21</strong></p>
+                <p class="mb-3 font-semibold text-white"><span class="font-bold"><i class="bi bi-envelope-fill "></i></span> elitavenir@gmail.com</p>
+                <p class="mb-4 font-semibold text-white"><span class="font-bold"><i class="bi bi-telephone-fill "></i></span> +243 99 92 37 023 </p>
+                <div class="text-white">
+                    <i class="call-icon font-bold p-2 bi bi-facebook"></i>
+                    <i class="call-icon font-bold p-2 bi bi-tiktok"></i>
+                    <i class="call-icon font-bold p-2 bi bi-instagram"></i>
+                    <i class="call-icon font-bold p-2 bi bi-whatsapp"></i>
+                </div>
             </div>
-            <div class="icons col-md-3">
-              <i class="col-md-3 bi bi-facebook"></i>
-              <i class="col-md-3 bi bi-linkedin"></i>
-              <i class="col-md-3 bi bi-whatsapp"></i>
-              <i class="col-md-3 bi bi-instagram"></i>
-            </div>
-          </div>
-          <div class="links row d-flex align-items-center">
-            <p class="col-md-6"><span>&copy</span> copyrigth elit-avenir 2023</p>
-            <div class="liens col-md-6">
-              <a href="javascript:void(0)" class="">a propos</a>
-              <a href="javascript:void(0)" class="">politique de confidentialité</a>
-              <a href="javascript:void(0)" class="">gallery</a>
-              <a href="javascript:void(0)" class="">se connecter</a>
-          </div>
-          </div>
+
+        </div>
+
+        <div class="liens mb-5 ">
+            <h4 class="font-bold text-2xl mb-4 text-white">Liens Utiles</h4>
+
+            <p class="mb-3 font-semibold text-white"><a class="" href="about.php">A propos de nous</a></p>
+            <p class="mb-3 font-semibold text-white"><a class="" href="contact.php">Nous Contacter</a></p>
+            <p class="mb-3 font-semibold text-white"><a class="" href="javascript:void(0)">Gallerie</a></p>
+            <p class="mb-4 font-semibold text-white"><a class="" href="connect-admin.php">Se Connecter</a></p>
+        </div>
+
         </footer>
+
+        <p class="col-md-6 text-center w-100 font-bold"><span>&copy</span> Elit-Avenir 2023. Tous Droits Reservés</p>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

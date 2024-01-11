@@ -8,6 +8,10 @@ sup{
     color: red;
 }
 
+.sous{
+    display: initial!important;
+}
+
 /* Menu ***************************************************************** */
 
     .nav-bar input{
@@ -76,9 +80,6 @@ sup{
     .nav-bar nav ul li ul li a{
         color: black;
     }
-    .nav-bar ul li:focus-within > ul{
-        display: initial;
-    }
 
     @media(max-width:1000px) {
 
@@ -120,11 +121,8 @@ sup{
             top: 100%!important;
             padding: 0!important;
         }
-        footer .row .liens a:nth-child(1){
-            margin-left: 10px!important;
-        }
         footer{
-            padding: 30px 50px 20px 50px!important;
+            padding: 10px!important;
         }
         .liens{
             display: flex;
@@ -136,11 +134,6 @@ sup{
         }
         .nav-bar input:checked ~ nav{
             transform: translateX(0)!important;
-        }
-        footer .row .logo img{
-            width: 80px!important;
-            height: 80px!important;
-            margin-bottom: 30px;
         }
         .links{
             flex-direction: column-reverse!important;
@@ -181,11 +174,6 @@ sup{
             height: 95vh!important;
         }
 
-    }
-
-    footer .row .logo img{
-        width: 100px;
-        height: 100px;
     }
 
 /***************  Fin Menu *******************/
@@ -303,39 +291,17 @@ body{
 /* Footer ***************************************************** */
 
 footer{
-    padding: 60px 100px 20px 100px;
+    padding: 50px;
     width: 100%!important;
     bottom: 0;
     background-color: #283277;
 }
 
-footer .row:nth-child(1){
-    margin-bottom: 10px;
+footer .histoire img{
+    width: 10rem;
+    height: 10rem;
 }
 
-footer .icons i{
-    color: #283277;
-    background-color: #fff;
-    padding: 10px 12px;
-    border-radius: 50%;
-    font-size: 18px;
-    cursor: pointer;
-    margin-left: 5px;
-}
-footer .row p{
-    color: #fff;
-    font-weight: 600;
-}
-footer .row .liens a{
-    /* color: rgba(217, 217, 217); */
-    color: #fff;
-    margin-left: 10px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-footer .row .liens a:nth-child(1){
-    margin-left: 70px;
-}
 
 /* Apropos  **************************************************** */
 
